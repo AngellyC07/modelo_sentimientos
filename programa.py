@@ -9,7 +9,7 @@ st.set_page_config(page_title="Evaluador PPE Inteligente", layout="wide")
 # ✨ Firma superior
 st.markdown("""
 <center>
-    <p style='font-size:18px;'><strong>Hecho con dedicación por Angelly y Nathalia</strong><br>Todos los derechos reservados ©️</p>
+    <p style='font-size:18px;'><strong>Análisis de Sentimientos</strong><br>Todos los derechos reservados ©️</p>
 </center>
 """, unsafe_allow_html=True)
 
@@ -20,7 +20,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_path)
 # 🔍 Instrucciones
 with st.expander("📖 ¿Cómo se usa esta herramienta?"):
     st.markdown("""
-    - 📄 Escribe un **texto** describiendo el equipo de protección personal que estás usando.
+    - 📄 Escribe un **texto** describiendo cómo te sientes.
     - 🛡️ La herramienta analizará el texto y te indicará el sentimiento.
     """)
 
