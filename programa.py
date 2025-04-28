@@ -13,12 +13,9 @@ st.markdown("""
 </center>
 """, unsafe_allow_html=True)
 
-# 📂 Ruta a la carpeta del modelo
-modelo_path = "AngellyCris/modelo_sentimientos"
-
-# 1️⃣ Cargar arquitectura
-model = AutoModelForSequenceClassification.from_pretrained(modelo_path, trust_remote_code=True)
-tokenizer = AutoTokenizer.from_pretrained(modelo_path)
+model_path = "AngellyCris/modelo_sentimientos"
+model = AutoModelForSequenceClassification.from_pretrained(model_path, use_safetensors=True)
+tokenizer = AutoTokenizer.from_pretrained(model_path)
 
 # 🔍 Instrucciones
 with st.expander("📖 ¿Cómo se usa esta herramienta?"):
